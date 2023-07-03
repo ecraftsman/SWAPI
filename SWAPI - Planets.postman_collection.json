@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "5d2cd3d5-4509-46ad-8f00-e10d4e8cf049",
+		"name": "SWAPI - Planets",
+		"description": "API collection for accessing information about planets from SWAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25728096"
+	},
+	"item": [
+		{
+			"name": "Get All Planets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/planets",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"planets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Planet by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/planets/{planetId}",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"planets",
+						"{planetId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Planets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/planets/?search={searchTerm}",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"planets",
+						""
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "{searchTerm}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
